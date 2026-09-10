@@ -21,11 +21,15 @@ Prototipo tecnológico basado en Procesamiento de Lenguaje Natural (PLN) para la
 
 ## Estructura del Proyecto
 estres-academico-pln/
+
 ├──  data/ # Corpus y datos
 
 │ ├── raw/ # Datos crudos (NO subir a GitHub)
+
 │ ├── processed/ # Datos preprocesados
+
 │ └── labeled/ # Datos etiquetados (train/val/test)
+
 │
 ├──  notebooks/ # Notebooks de experimentación
 │ ├── 01_exploracion.ipynb
