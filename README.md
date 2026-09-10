@@ -22,7 +22,7 @@ Prototipo tecnológico basado en Procesamiento de Lenguaje Natural (PLN) para la
 ## Estructura del Proyecto
 estres-academico-pln/
 
-├──  data/ # Corpus y datos
+data/ # Corpus y datos
 
 │ ├── raw/ # Datos crudos (NO subir a GitHub)
 
@@ -30,6 +30,7 @@ estres-academico-pln/
 
 │ └── labeled/ # Datos etiquetados (train/val/test)
 
+├──  docs/ # Documentación
 │
 ├──  notebooks/ # Notebooks de experimentación
 │ ├── 01_exploracion.ipynb
@@ -37,20 +38,23 @@ estres-academico-pln/
 │ ├── 03_entrenamiento.ipynb
 │ └── 04_evaluacion.ipynb
 │
-├──  src/ # Código fuente
-│ ├── preprocessing/ # Pipeline de PLN
-│ ├── models/ # Modelos entrenados
-│ ├── evaluation/ # Métricas y evaluación
-│ └── app/ # Interfaz Streamlit
-│
-├──  docs/ # Documentación
 ├──  results/ # Resultados y gráficos
+│ ├── figures
+│ ├── metrics
+├──  src/ # Código fuente
+│ ├── app/ # Interfaz Streamlit
+│ ├── evaluation/ # Métricas y evaluación
+│ ├── models/ # Modelos entrenados
+│ └── preprocessing/ # Pipeline de PLN
+│
+
 ├──  tests/ # Pruebas unitarias
 │
 ├── requirements.txt # Dependencias Python
 ├── .gitignore # Archivos ignorados
 ├── README.md # Este archivo
 └── LICENSE # Licencia MIT
+
 <img width="386" height="713" alt="imagen" src="https://github.com/user-attachments/assets/91554608-80ff-49fd-90b4-193a87c08337" />
 
 
