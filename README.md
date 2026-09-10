@@ -31,29 +31,51 @@ data/ # Corpus y datos
 │ └── labeled/ # Datos etiquetados (train/val/test)
 
 ├──  docs/ # Documentación
+
 │
+
 ├──  notebooks/ # Notebooks de experimentación
+
 │ ├── 01_exploracion.ipynb
+
 │ ├── 02_preprocesamiento.ipynb
+
 │ ├── 03_entrenamiento.ipynb
+
 │ └── 04_evaluacion.ipynb
+
 │
+
 ├──  results/ # Resultados y gráficos
+
 │ ├── figures
+
 │ ├── metrics
+
 ├──  src/ # Código fuente
+
 │ ├── app/ # Interfaz Streamlit
+
 │ ├── evaluation/ # Métricas y evaluación
+
 │ ├── models/ # Modelos entrenados
+
 │ └── preprocessing/ # Pipeline de PLN
+
 │
 
 ├──  tests/ # Pruebas unitarias
+
 │
+
 ├── requirements.txt # Dependencias Python
+
 ├── .gitignore # Archivos ignorados
+
 ├── README.md # Este archivo
+
 └── LICENSE # Licencia MIT
+
 
 <img width="386" height="713" alt="imagen" src="https://github.com/user-attachments/assets/91554608-80ff-49fd-90b4-193a87c08337" />
 
