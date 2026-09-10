@@ -51,6 +51,7 @@ estres-academico-pln/
 ├── .gitignore # Archivos ignorados
 ├── README.md # Este archivo
 └── LICENSE # Licencia MIT
+<img width="386" height="713" alt="imagen" src="https://github.com/user-attachments/assets/91554608-80ff-49fd-90b4-193a87c08337" />
 
 
 ## Autores
