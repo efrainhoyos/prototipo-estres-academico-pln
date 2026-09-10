@@ -19,7 +19,7 @@ Prototipo tecnológico basado en Procesamiento de Lenguaje Natural (PLN) para la
 - **Interfaz:** Streamlit
 - **Visualización:** Matplotlib, Seaborn
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 estres-academico-pln/
@@ -42,17 +42,17 @@ estres-academico-pln/
 │   └── 📁 metrics/
 │
 ├── 📁 src/                           # Código fuente
-│   ├── 📁 preprocessing/             # Pipeline de PLN
-│   ├── 📁 models/                    # Modelos entrenados
+│   ├── 📁 app/                       # Interfaz Streamlit
 │   ├── 📁 evaluation/                # Métricas y evaluación
-│   └── 📁 app/                       # Interfaz Streamlit
+│   ├── 📁 models/                    # Modelos entrenados
+│   └── 📁 preprocessing/             # Pipeline de PLN
 │
 ├── 📁 tests/                         # Pruebas unitarias
 │
-├── 📄 requirements.txt               # Dependencias Python
 ├── 📄 .gitignore                     # Archivos ignorados
+├── 📄 LICENSE                        # Licencia MIT
 ├── 📄 README.md                      # Este archivo
-└── 📄 LICENSE                        # Licencia MIT
+└── 📄 requirements.txt               # Dependencias Python
 ```
 
 ## Autores
