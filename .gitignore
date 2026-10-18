@@ -77,3 +77,15 @@ temp/
 # HUGGINGFACE CACHE
 # ============================================
 .cache/huggingface/
+# Modelos entrenados (muy pesados)
+src/models/
+*.bin
+*.safetensors
+
+# Resultados temporales de entrenamiento
+notebooks/resultados_beto/
+__pycache__/
+*.pyc
+
+# Archivos de caché de Hugging Face
+.cache/
