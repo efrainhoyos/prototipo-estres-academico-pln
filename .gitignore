@@ -31,7 +31,7 @@ build/
 # Nunca subir datos sin anonimizar
 data/raw/*
 !data/raw/.gitkeep
-*.csv
+#*.csv
 !data/processed/*.csv
 !data/labeled/*.csv
 
