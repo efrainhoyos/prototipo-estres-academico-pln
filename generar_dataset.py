@@ -120,23 +120,23 @@ dataset = [
 # Ruta del archivo
 ruta = os.path.join('data', 'labeled', 'dataset_ejemplo.csv')
 
-# Crear directorio si no existe
+# Crea el directorio si no existe
 os.makedirs(os.path.dirname(ruta), exist_ok=True)
 
-# Escribir el CSV
+# Escribw el CSV
 with open(ruta, 'w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['id', 'texto', 'etiqueta'])
     for registro in dataset:
         writer.writerow(registro)
 
-print(f"✅ Dataset generado exitosamente con {len(dataset)} registros")
-print(f"📁 Ubicación: {os.path.abspath(ruta)}")
+print(f"Dataset generado exitosamente con {len(dataset)} registros")
+print(f"Ubicación: {os.path.abspath(ruta)}")
 
-# Mostrar distribución
+# Muestra distribución
 from collections import Counter
 distribucion = Counter([r[2] for r in dataset])
-print("\n📊 Distribución de clases:")
+print("\nDistribución de clases:")
 print(f"   Clase 0 (Positivo/Tranquilo): {distribucion[0]} registros")
 print(f"   Clase 1 (Neutro):             {distribucion[1]} registros")
 print(f"   Clase 2 (Negativo/Estresado): {distribucion[2]} registros")

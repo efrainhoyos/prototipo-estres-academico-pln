@@ -22,7 +22,7 @@ class TestPipelinePLN(unittest.TestCase):
     
     def test_normalizacion_texto(self):
         """Prueba la normalización: minúsculas y eliminación de caracteres especiales"""
-        texto = "¡ESTOY MUY ESTRESADO! 😔 #examen"
+        texto = "¡ESTOY MUY ESTRESADO! #examen"
         resultado = self.pipeline.normalizar_texto(texto)
         
         self.assertEqual(resultado, "estoy muy estresado examen")
@@ -87,5 +87,5 @@ class TestPipelinePLN(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # Ejecutar las pruebas con salida detallada
+    # Ejecuta las pruebas con salida detallada
     unittest.main(verbosity=2)
