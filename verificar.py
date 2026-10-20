@@ -1,37 +1,40 @@
-# verificar.py
+"""
+Script para verificar la instalacion de las dependencias del proyecto.
+"""
 import sys
-print(f"✅ Python versión: {sys.version.split()[0]}")
+
+print(f"Python version: {sys.version.split()[0]}")
 
 try:
     import torch
-    print(f"✅ PyTorch instalado. Versión: {torch.__version__}")
+    print(f"PyTorch instalado. Version: {torch.__version__}")
     print(f"   GPU disponible: {torch.cuda.is_available()}")
 except ImportError:
-    print("❌ Error: PyTorch no está instalado.")
+    print("Error: PyTorch no esta instalado.")
 
 try:
     import transformers
-    print(f"✅ Transformers instalado. Versión: {transformers.__version__}")
+    print(f"Transformers instalado. Version: {transformers.__version__}")
 except ImportError:
-    print("❌ Error: Transformers no está instalado.")
+    print("Error: Transformers no esta instalado.")
 
 try:
     import spacy
     nlp = spacy.load("es_core_news_md")
-    print("✅ spaCy y modelo 'es_core_news_md' cargados correctamente.")
+    print("spaCy y modelo 'es_core_news_md' cargados correctamente.")
 except (ImportError, OSError) as e:
-    print(f"❌ Error: spaCy o el modelo en español no están instalados. {e}")
+    print(f"Error: spaCy o el modelo en espanol no estan instalados. {e}")
 
 try:
     import streamlit
-    print(f"✅ Streamlit instalado. Versión: {streamlit.__version__}")
+    print(f"Streamlit instalado. Version: {streamlit.__version__}")
 except ImportError:
-    print("❌ Error: Streamlit no está instalado.")
+    print("Error: Streamlit no esta instalado.")
 
 try:
     import pandas
-    print(f"✅ Pandas instalado. Versión: {pandas.__version__}")
+    print(f"Pandas instalado. Version: {pandas.__version__}")
 except ImportError:
-    print("❌ Error: Pandas no está instalado.")
+    print("Error: Pandas no esta instalado.")
 
-print("\n🎉 ¡Entorno configurado exitosamente! Listo para el Sprint 1.")
+print("\nEntorno configurado exitosamente. Listo para el desarrollo.")

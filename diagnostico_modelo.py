@@ -15,7 +15,7 @@ from preprocessing.pipeline import PipelinePLN
 MODEL_PATH = "src/models/beto_finetuned"
 LABELS = {0: "Positivo/Tranquilo", 1: "Neutro", 2: "Negativo/Estresado"}
 
-# Textos de prueba (deberían dar resultados variados)
+# Textos de prueba (estos deberían dar resultados variados)
 textos_prueba = [
     ("Estoy muy feliz y contento con mi progreso académico", 0),  # Positivo
     ("La clase estuvo bien, nada especial", 1),  # Neutro
